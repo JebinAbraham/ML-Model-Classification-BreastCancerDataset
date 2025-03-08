@@ -1,0 +1,34 @@
+Model,Task,Challenges
+Data Preprocessing,Data Loading,Understanding feature relationships and distributions
+Data Preprocessing,Missing Value Analysis,"No missing values found, but needed to verify data quality"
+Data Preprocessing,Feature Scaling,Choosing between StandardScaler vs MinMaxScaler for feature scaling
+Linear Regression,Model Implementation,"Adapting regression for binary classification, achieved accuracy=0.956"
+Linear Regression,Performance Optimization,"Converting continuous predictions to binary outcomes while maintaining AUC={linear_metrics[""auc""]:.3f}"
+Linear Regression,Model Evaluation,Surprisingly good performance with F1=0.966 despite being a regression model
+Random Forest,Model Implementation,Large hyperparameter space to search through
+Random Forest,Hyperparameter Tuning,Long computation time for RandomizedSearchCV with 50 iterations
+Random Forest,Feature Importance Analysis,Identifying most relevant features for prediction
+Random Forest,Model Evaluation,Balancing different evaluation metrics
+Decision Tree,Model Implementation,Determining optimal tree depth to prevent overfitting
+Decision Tree,Parameter Optimization,Complex trade-off between tree depth and accuracy
+Decision Tree,Tree Visualization,Making tree visualization readable with many features
+Decision Tree,Model Evaluation,Handling class imbalance in evaluation metrics
+Logistic Regression,Model Implementation with GridSearchCV,Implementation using liblinear and saga solvers for optimization
+Logistic Regression,Hyperparameter Tuning,"Best params: C=1, penalty=l1"
+Logistic Regression,Performance Assessment,"Strong performance with accuracy=0.965, AUC=0.997"
+KNN,Model Implementation,Implementation with multiple distance metrics and algorithm options
+KNN,Parameter Optimization,"Best params: n_neighbors=8, metric=euclidean"
+KNN,Cross-validation and Evaluation,"Achieved balanced performance: accuracy=0.956, F1=0.965"
+SVM,Model Implementation,Implementation with probability estimation for ROC curves
+SVM,Kernel and Parameter Tuning,"Best params: C=14.19, kernel=rbf"
+SVM,Performance Evaluation,"High performance with accuracy=0.956, AUC=0.995"
+K-means,Optimal Cluster Selection,Determining optimal number of clusters using multiple methods
+K-means,Clustering Implementation,High dimensionality affecting cluster separation
+K-means,Silhouette Analysis,Low silhouette score indicating overlapping clusters
+K-means,Cluster Evaluation,Mapping clusters to actual cancer diagnoses
+Gaussian Naive Bayes,Model Implementation,Implementation assuming Gaussian distribution of features
+Gaussian Naive Bayes,Cross-validation,CV F1 score: 0.943 (±0.034)
+Gaussian Naive Bayes,Performance Analysis,"Strong performance: accuracy=0.965, F1=0.972"
+Bernoulli Naive Bayes,Model Implementation,Implementation with binary/binarized features
+Bernoulli Naive Bayes,Cross-validation,CV F1 score: 0.949 (±0.038)
+Bernoulli Naive Bayes,Performance Analysis,"Best overall performance: accuracy=0.982, AUC=1.000"
